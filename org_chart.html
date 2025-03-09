@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAKAR - Organization Chart</title>
+    <title>PAKAR - Exco Members</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -18,10 +18,11 @@
         </a>
         <ul class="flex space-x-6">
             <li><a href="index.html" class="hover:text-orange-500 transition">Home</a></li>
-            <li><a href="org_chart.html" class="hover:text-orange-500 transition">Teams</a></li>
+            <li><a href="org_chart.html" class="hover:text-orange-500 transition">Organization</a></li>
             <li><a href="programs.html" class="hover:text-orange-500 transition">Programs</a></li>
             <li><a href="upcoming.programs.html" class="hover:text-orange-500 transition">Upcoming Programs</a></li>
             <li><a href="contact.html" class="hover:text-orange-500 transition">Contact</a></li>
+            <li><a href="news.html" class="hover:text-orange-500 transition">News & Event</a></li>
             <button id="language-toggle" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">BM</button>
         </li>
     </div>
@@ -30,7 +31,7 @@
 <!-- Organization Chart Section -->
 <section class="py-12 bg-gradient-to-r from-orange-100 to-gray-200">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-orange-500 mb-4">Organization Chart</h2>
+        <h2 class="text-3xl font-bold text-orange-500 mb-4">Exco Members</h2>
         <p class="max-w-2xl mx-auto mb-6 text-black text-sm">
             Meet the leaders and members of PAKAR Malaysia dedicated to promoting integrity, anti-corruption, and good governance.
         </p>
@@ -43,7 +44,7 @@
     
 <!-- President -->
 <div class="relative text-center">
-    <img src="assets/images/pakar-nasir.jpg" alt="Haji Mohd Nasir" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+    <img src="." alt="Haji Mohd Nasir" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
     <h3 class="text-xl font-bold text-black mb-1">Haji Mohd Nasir Bin Ab Hadi</h3>
     <p class="text-orange-500 text-sm font-semibold">President</p>
     <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Longer Connecting Line -->
@@ -52,33 +53,44 @@
 <!-- Deputy President -->
 <div class="relative text-center">
     <div class="w-1 h-6 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
-    <img src="assets/images/pakar-razim.jpg" alt="Datuk Razim Mohd Noor" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+    <img src="." alt="Datuk Razim Mohd Noor" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
     <h3 class="text-xl font-bold text-black mb-1">Datuk Razim Bin Mohd Noor</h3>
     <p class="text-orange-500 text-sm font-semibold">Deputy President</p>
     <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Longer Connecting Line -->
 </div>
 
-<!-- Vice Presidents Level with connecting line -->
+<!-- Vice Presidents Level with centered alignment -->
 <div class="relative flex justify-center mt-6">
-    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-orange-500"></div> <!-- Connecting line -->
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-10 bg-orange-500"></div> <!-- Longer Connecting Line -->
 </div>
-<div class="flex justify-center space-x-10">
-    <div class="relative text-center">
-        <img src="assets/images/pakar-wanita.jpg" alt="Datin Rabiah Mokhtar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+
+<!-- Center the Vice Presidents -->
+<div class="flex justify-center items-center space-x-10 w-full">
+    <div class="relative text-center w-1/3">
+        <img src="." alt="Datin Rabiah Mokhtar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
         <h3 class="text-xl font-bold text-black mb-1">Datin Rabiah Binti Mokhtar</h3>
         <p class="text-orange-500 text-sm font-semibold">Vice President 1</p>
     </div>
-    <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Ishak Abu Bakar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+    <div class="relative text-center w-1/3">
+        <img src="." alt="Haji Ishak Abu Bakar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
         <h3 class="text-xl font-bold text-black mb-1">Haji Ishak Bin Abu Bakar</h3>
         <p class="text-orange-500 text-sm font-semibold">Vice President 2</p>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-6 bg-orange-500"></div> <!-- Connecting Line Below VP2 -->
+    </div>
+    <div class="relative text-center w-1/3">
+        <img src="." alt="Vice President 3" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+        <h3 class="text-xl font-bold text-black mb-1">Vice President 3</h3>
+        <p class="text-orange-500 text-sm font-semibold">Vice President 3</p>
     </div>
 </div>
+
+
+
 
 <!-- Secretary General Level -->
 <div class="relative text-center mt-6">
     <div class="w-1 h-6 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
-    <img src="assets/images/pakar-samri.jpeg" alt="Samri Dollah" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+    <img src="." alt="Samri Dollah" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
     <h3 class="text-xl font-bold text-black mb-1">Samri Bin Dollah</h3>
     <p class="text-orange-500 text-sm font-semibold">Secretary General</p>
     <div class="w-1 h-8 bg-orange-500 mx-auto"></div> <!-- Arrow Differentiation -->
@@ -90,64 +102,16 @@
 </div>
 <div class="flex justify-center space-x-10">
     <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Dzulkarnaen Haseri" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+        <img src="." alt="Dzulkarnaen Haseri" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
         <h3 class="text-xl font-bold text-black mb-1">Dzulkarnaen Bin Haseri</h3>
         <p class="text-orange-500 text-sm font-semibold">Vice Secretary</p>
     </div>
 
     <!-- Treasurer (No line below) -->
     <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Mohd Izham Ahmad" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+        <img src="." alt="Mohd Izham Ahmad" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
         <h3 class="text-xl font-bold text-black mb-1">Encik Izham Bin Ahmad</h3>
         <p class="text-orange-500 text-sm font-semibold">Treasurer</p>
-    </div>
-</div>
-
-<!-- Wrapper for Committee Members with a longer vertical connecting line -->
-<div class="relative mt-6">
-    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-12 bg-orange-500"></div> <!-- Extended connecting line -->
-    
-    <!-- Committee Members in Grid -->
-    <div class="grid grid-cols-3 gap-6 mt-6">
-        <div class="relative text-center">
-            <img src="assets/images/pakar-lelaki.jpg" alt="Zuriati Ariffin" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-            <h3 class="text-xl font-bold text-black mb-1">Zuriati Ariffin</h3>
-            <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-        </div>
-        <div class="relative text-center">
-            <img src="assets/images/pakar-lelaki.jpg" alt="Mohamad Syahiran Annuar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-            <h3 class="text-xl font-bold text-black mb-1">En. Mohamad Syahiran Annuar</h3>
-            <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-        </div>
-        <div class="relative text-center">
-            <img src="assets/images/pakar-lelaki.jpg" alt="Shukri Mohd Saad" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-            <h3 class="text-xl font-bold text-black mb-1">Shukri Mohd Saad</h3>
-            <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-        </div>
-    <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Mohamad Bin Hassan" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-        <h3 class="text-xl font-bold text-black mb-1">Tn. Mohamad Bin Hassan</h3>
-        <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-    </div>
-    <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Datuk Azizan Zakaria" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-        <h3 class="text-xl font-bold text-black mb-1">Datuk Azizan Bin Zakaria</h3>
-        <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-    </div>
-    <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Aswannudin Bin Harifuddin" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-        <h3 class="text-xl font-bold text-black mb-1">En. Aswannudin Bin Harifuddin</h3>
-        <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-    </div>
-    <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Mohd Faizal Bin Aminuddin" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-        <h3 class="text-xl font-bold text-black mb-1">En. Mohd Faizal Bin Aminuddin</h3>
-        <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
-    </div>
-    <div class="relative text-center">
-        <img src="assets/images/pakar-lelaki.jpg" alt="Mohd Nizam Ismail" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-        <h3 class="text-xl font-bold text-black mb-1">Tn. Mohd Nizam Ismail</h3>
-        <p class="text-orange-500 text-sm font-semibold">Committee Member</p>
     </div>
 </div>
 </body>
