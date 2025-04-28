@@ -11,7 +11,7 @@
 
 <!-- Navbar -->
 <nav class="bg-black text-white py-4 shadow-lg">
-    <div class="container mx-auto max-w-screen-lg px-4 flex justify-between items-center">
+    <div class="container mx-auto max-w-screen-lg px-4 flex justify-between items-center relative">
         <a href="index.html" class="flex items-center">
             <img src="assets/images/pakar-logo.jpg" alt="PAKAR Logo" class="h-12 mr-3">
             <span class="text-xl font-bold text-orange-500">PAKAR Malaysia</span>
@@ -40,7 +40,7 @@
         </ul>
 
         <!-- Mobile Navbar links (hidden on large screens) -->
-        <ul class="lg:hidden absolute left-0 right-0 bg-black text-white px-4 py-6 space-y-4 hidden" id="navbar-menu">
+        <ul class="lg:hidden bg-black text-white px-4 py-6 space-y-4 hidden absolute w-full top-full left-0 mt-4" id="navbar-menu">
             <li><a href="index.html" class="block hover:text-orange-500">Home</a></li>
             <li><a href="org_chart.html" class="block hover:text-orange-500">Organization</a></li>
             <li><a href="programs.html" class="block hover:text-orange-500">Programs</a></li>
@@ -64,6 +64,7 @@
         navbarMenu.classList.toggle('hidden');
     });
 </script>
+
 
 
 <!-- Hero Section with Background Image -->
