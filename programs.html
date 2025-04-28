@@ -7,31 +7,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-black">
+<body class="bg-gray-100 text-black flex flex-col min-h-screen">
 
 <!-- Navbar -->
 <nav class="bg-black text-white py-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
+    <div class="container mx-auto max-w-screen-lg px-4 flex justify-between items-center">
         <a href="index.html" class="flex items-center">
             <img src="assets/images/pakar-logo.jpg" alt="PAKAR Logo" class="h-12 mr-3">
             <span class="text-xl font-bold text-orange-500">PAKAR Malaysia</span>
         </a>
-        <ul class="flex space-x-6">
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-orange-500 transition">Home</a></li>
-                <li><a href="org_chart.html" class="hover:text-orange-500 transition">Organization</a></li>
-                <li><a href="programs.html" class="hover:text-orange-500 transition">Programs</a></li>
-                <li><a href="upcoming.programs.html" class="hover:text-orange-500 transition">Upcoming Events</a></li>
-                <li><a href="contact.html" class="hover:text-orange-500 transition">Contact</a></li>
-                <li><a href="news.html" class="hover:text-orange-500 transition">News</a></li>
-                <button id="language-toggle" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">BM</button>
+        
+        <!-- Dropdown for small screens -->
+        <button class="lg:hidden text-white focus:outline-none" id="navbar-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Navbar links -->
+        <ul class="flex space-x-6 items-center hidden lg:flex">
+            <li><a href="index.html" class="hover:text-orange-500 transition">Home</a></li>
+            <li><a href="org_chart.html" class="hover:text-orange-500 transition">Organization</a></li>
+            <li><a href="programs.html" class="hover:text-orange-500 transition">Programs</a></li>
+            <li><a href="upcoming.programs.html" class="hover:text-orange-500 transition">Upcoming Events</a></li>
+            <li><a href="contact.html" class="hover:text-orange-500 transition">Contact</a></li>
+            <li><a href="news.html" class="hover:text-orange-500 transition">News</a></li>
+            <li>
+                <button id="language-toggle" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
+                    BM
+                </button>
+            </li>
+        </ul>
+
+        <!-- Mobile Navbar links (hidden on large screens) -->
+        <ul class="lg:hidden absolute left-0 right-0 bg-black text-white px-4 py-6 space-y-4 hidden" id="navbar-menu">
+            <li><a href="index.html" class="block hover:text-orange-500">Home</a></li>
+            <li><a href="org_chart.html" class="block hover:text-orange-500">Organization</a></li>
+            <li><a href="programs.html" class="block hover:text-orange-500">Programs</a></li>
+            <li><a href="upcoming.programs.html" class="block hover:text-orange-500">Upcoming Events</a></li>
+            <li><a href="contact.html" class="block hover:text-orange-500">Contact</a></li>
+            <li><a href="news.html" class="block hover:text-orange-500">News</a></li>
+            <li>
+                <button id="language-toggle-mobile" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
+                    BM
+                </button>
             </li>
         </ul>
     </div>
 </nav>
 
+<script>
+    // JavaScript to toggle the mobile menu
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    navbarToggle.addEventListener('click', () => {
+        navbarMenu.classList.toggle('hidden');
+    });
+</script>
+
 <!-- Programs Section -->
-<section class="py-16 bg-gradient-to-r from-orange-100 to-gray-200">
+<section class="py-16 bg-gradient-to-r from-orange-100 to-gray-200 flex-grow">
     <div class="container mx-auto">
         <h2 id="programs-title" class="text-4xl font-bold text-center text-orange-500 mb-6">Our Programs Offering</h2>
         <p id="programs-desc" class="text-center max-w-3xl mx-auto mb-8">
@@ -69,7 +104,7 @@
                 <p id="program6-desc">Engaging with communities to create awareness about integrity and anti-corruption efforts.</p>
             </div>
         </div>
-        
+</section>
 
 <!-- Speakers Section -->
 <section class="py-16 bg-white">
@@ -83,7 +118,8 @@
                 <p class="text-sm">Former Director, Corporate Division SME Corp (SMIDEC)</p>
             </div>
         </div>
-    </div><div class="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+    </div>
+    <div class="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
                 <img src="assets/images/pakar-razim.jpg" alt="Mohd Rezaidi Bin Mohd Ishak" class="w-28 h-auto mx-auto rounded-lg mb-3 shadow-sm">
                 <h3 class="text-xl font-semibold mb-2 text-black">Mohd Rezaidi Bin Mohd Ishak</h3>
                 <p class="text-sm">Master in BBA, Diploma in Business Studies, UITM</p>
@@ -92,64 +128,69 @@
             </div>
         </div>
     </div>
-    
-
 
 <!-- Footer -->
-<footer class="bg-black text-white py-6">
+<footer class="bg-black text-white py-6 mt-12">
     <div class="container mx-auto text-center">
         <p>&copy; 2024 PAKAR Malaysia. All Rights Reserved.</p>
         <p>Contact us at <a href="mailto:pakarsua@gmail.com" class="text-orange-500 hover:underline">pakarsua@gmail.com</a></p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com" target="_blank" class="transition">
+                <img src="assets/images/instagram-icon.jpg" alt="Instagram" class="w-8 h-8 hover:opacity-75">
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com" target="_blank" class="transition">
+                <img src="assets/images/facebook-icon.jpg" alt="Facebook" class="w-8 h-8 hover:opacity-75">
+            </a>
+            <!-- TikTok Icon -->
+            <a href="https://www.tiktok.com" target="_blank" class="transition">
+                <img src="assets/images/tiktok-icon.jpg" alt="TikTok" class="w-8 h-8 hover:opacity-75">
+            </a>
+            <!-- X Icon -->
+            <a href="https://www.X.com" target="_blank" class="transition">
+                <img src="assets/images/X-icon.jpg" alt="X" class="w-8 h-8 hover:opacity-75">
+            </a>  
+        </div>
     </div>
 </footer>
 
-<!-- JavaScript for Language Switching -->
-<script>
-    const languageToggle = document.getElementById("language-toggle");
-    const translations = {
-        en: {
-            programsTitle: "Our Programs",
-            programsDesc: "PAKAR Malaysia offers programs focused on anti-corruption education, integrity, and good governance to raise awareness and strengthen organizational practices.",
-            program1Title: "Educational Workshops",
-            program1Desc: "Programs aimed at educating organizations and individuals about anti-corruption measures and best practices.",
-            program2Title: "Policy Advocacy",
-            program2Desc: "Collaborations with policymakers to promote good governance and anti-corruption laws.",
-            program3Title: "Community Outreach",
-            program3Desc: "Engaging with communities to create awareness about integrity and anti-corruption efforts.",
-            speakersTitle: "Our Speakers",
-            previousProgramsTitle: "Previous Programs",
-        },
-        bm: {
-            programsTitle: "Program Kami",
-            programsDesc: "PAKAR Malaysia menawarkan program yang memberi tumpuan kepada pendidikan antirasuah, integriti, dan tadbir urus yang baik untuk meningkatkan kesedaran dan memperkukuh amalan organisasi.",
-            program1Title: "Bengkel Pendidikan",
-            program1Desc: "Program yang bertujuan untuk mendidik organisasi dan individu tentang langkah-langkah antirasuah dan amalan terbaik.",
-            program2Title: "Advokasi Dasar",
-            program2Desc: "Kerjasama dengan pembuat dasar untuk mempromosikan tadbir urus yang baik dan undang-undang antirasuah.",
-            program3Title: "Jangkauan Komuniti",
-            program3Desc: "Berinteraksi dengan komuniti untuk meningkatkan kesedaran tentang integriti dan usaha antirasuah.",
-            speakersTitle: "Penceramah Kami",
-            previousProgramsTitle: "Program Sebelumnya",
-        },
-    };
+<!-- Additional Styles -->
+<style>
+    footer {
+        background-color: #000;
+        margin-top: 50px; /* To give some space between the main content and footer */
+    }
 
-    let currentLanguage = "en";
+    footer .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-    languageToggle.addEventListener("click", () => {
-        currentLanguage = currentLanguage === "en" ? "bm" : "en";
-        languageToggle.textContent = currentLanguage === "en" ? "BM" : "EN";
+    footer p {
+        margin: 0;
+    }
 
-        document.getElementById("programs-title").textContent = translations[currentLanguage].programsTitle;
-        document.getElementById("programs-desc").textContent = translations[currentLanguage].programsDesc;
-        document.getElementById("program1-title").textContent = translations[currentLanguage].program1Title;
-        document.getElementById("program1-desc").textContent = translations[currentLanguage].program1Desc;
-        document.getElementById("program2-title").textContent = translations[currentLanguage].program2Title;
-        document.getElementById("program2-desc").textContent = translations[currentLanguage].program2Desc;
-        document.getElementById("program3-title").textContent = translations[currentLanguage].program3Title;
-        document.getElementById("program3-desc").textContent = translations[currentLanguage].program3Desc;
-        document.getElementById("speakers-title").textContent = translations[currentLanguage].speakersTitle;
-        document.getElementById("previous-programs-title").textContent = translations[currentLanguage].previousProgramsTitle;
-    });
-</script>
+    footer .text-sm {
+        font-size: 0.875rem;
+    }
+
+    footer .transition {
+        transition: opacity 0.3s ease;
+    }
+
+    footer .hover\:opacity-75:hover {
+        opacity: 0.75;
+    }
+
+    footer .text-orange-500 {
+        color: #FF6A00;
+    }
+
+    footer .hover\:underline:hover {
+        text-decoration: underline;
+    }
+</style>
+
 </body>
 </html>
