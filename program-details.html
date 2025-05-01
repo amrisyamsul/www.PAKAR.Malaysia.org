@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAKAR Malaysia - Program Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-black">
+
+<!-- Navbar -->
+<nav class="bg-black text-white py-4 shadow-lg">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="assets/images/pakar-logo.jpg" alt="PAKAR Logo" class="h-12">
+            <span class="text-xl font-bold text-orange-500">PAKAR Malaysia</span>
+        </a>
+    </div>
+</nav>
+
+<!-- Back Button Section -->
+<section class="py-4 bg-gray-100 text-center">
+    <div class="container mx-auto">
+        <a href="upcoming.programs.html" class="text-orange-500 hover:text-orange-400 font-semibold text-lg">
+            &#8592; Back to Upcoming Programs
+        </a>
+    </div>
+</section>
+
+<!-- Program Detail Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-orange-500 mb-6" id="program-title"></h2>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg max-w-3xl mx-auto">
+            <img src="assets/images/pakar-team.jpg" alt="Program Image" class="w-48 h-auto mx-auto rounded-lg mb-4 shadow-md" id="program-image">
+            <p class="text-black mb-6" id="program-description"></p>
+            <h3 class="text-2xl font-bold text-black" id="program-speaker">Speaker Name</h3>
+            <p class="text-orange-500 font-semibold" id="program-date">Date of Event</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const program = params.get("program"); // Get the 'program' query parameter
+
+    const programDetails = {
+        iso37001: {
+            title: "Workshop on Implementing ISO 37001:2016 (ABMS) in Organizations",
+            description: "This workshop focuses on the implementation of ISO 37001:2016 for Anti-Bribery Management Systems (ABMS). Learn about the steps, processes, and strategies to implement this globally recognized anti-corruption standard.",
+            speaker: "Dr. John Doe",
+            date: "12th December 2024",
+            image: "assets/images/iso37001.jpg"
+        },
+        crm: {
+            title: "Corruption Risk Management (CRM) Training for Corporate Compliance",
+            description: "This training session focuses on identifying, assessing, and mitigating corruption risks in corporate environments. Attendees will learn the essential CRM strategies to ensure compliance with anti-corruption laws.",
+            speaker: "Jane Smith",
+            date: "20th December 2024",
+            image: "assets/images/crm-training.jpg"
+        },
+        // Add more program details here as needed
+    };
+
+    const currentProgram = programDetails[program];
+
+    // Set the content dynamically
+    document.getElementById("program-title").textContent = currentProgram.title;
+    document.getElementById("program-description").textContent = currentProgram.description;
+    document.getElementById("program-speaker").textContent = currentProgram.speaker;
+    document.getElementById("program-date").textContent = currentProgram.date;
+    document.getElementById("program-image").src = currentProgram.image;
+</script>
+
+</body>
+</html>
