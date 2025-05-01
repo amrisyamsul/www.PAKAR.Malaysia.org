@@ -41,7 +41,7 @@
         </ul>
 
         <!-- Mobile Navbar links -->
-        <ul class="lg:hidden absolute left-0 right-0 bg-black text-white px-4 py-6 space-y-6 hidden max-h-[80vh] overflow-y-auto" id="navbar-menu">
+        <ul class="lg:hidden absolute left-0 right-0 bg-black text-white px-4 py-6 space-y-6 hidden max-h-[60vh] overflow-y-auto" id="navbar-menu">
             <li><a href="index.html" class="block text-white hover:text-orange-500 transition">Home</a></li>
             <li><a href="org_chart.html" class="block text-white hover:text-orange-500 transition">Organization</a></li>
             <li><a href="programs.html" class="block text-white hover:text-orange-500 transition">Programs</a></li>
@@ -64,10 +64,14 @@
     const navbarMenu = document.getElementById('navbar-menu');
     navbarToggle.addEventListener('click', () => {
         navbarMenu.classList.toggle('hidden');
-        navbarMenu.classList.toggle('max-h-[80vh]'); // Adjust max height for smooth opening
+        navbarMenu.classList.toggle('max-h-[60vh]'); // Adjust max height for smooth opening
         navbarMenu.classList.toggle('overflow-y-auto'); // Make the menu scrollable
     });
 </script>
+
+</body>
+</html>
+
 </body>
 </html>
 
