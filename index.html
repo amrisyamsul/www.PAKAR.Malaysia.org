@@ -78,14 +78,11 @@
 
 
 <!-- Hero Section with Dynamic Background Image -->
-<section id="hero-section" class="relative text-white text-center py-16" style="background: url('assets/images/pakar-team.jpg') no-repeat center center; background-size: cover; height: 70vh; transition: background-image 1s ease-in-out;">
+<section id="hero-section" class="relative text-white text-center py-16 flex items-center justify-center" style="background: url('assets/images/pakar-team.jpg') no-repeat center center; background-size: cover; height: 70vh; transition: background-image 1s ease-in-out;">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="relative container mx-auto">
+    <div class="relative container mx-auto text-center">
         <h1 id="hero-title" class="text-5xl font-bold uppercase">Welcome to PAKAR Malaysia</h1>
         <p id="hero-subtitle" class="mt-4 text-lg tracking-wide">Promoting Integrity, Trust, and Transparency</p>
-        <a href="programs.html" id="hero-btn" class="bg-orange-500 text-black font-bold py-3 px-6 rounded mt-6 inline-block hover:bg-orange-400 transition">
-            Explore Programs
-        </a>
     </div>
 </section>
 
@@ -173,44 +170,36 @@
 
 <!-- Footer -->
 <footer class="bg-black text-white py-6">
-    <div class="container mx-auto text-center px-4 md:px-0">
+    <div class="container mx-auto text-center px-4 md:px-12">
         <!-- Contact Us Section -->
         <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 text-white">
             <!-- Contact Us Left Column -->
-            <div class="flex flex-col items-center md:items-start space-y-4">
+            <div class="flex flex-col items-center md:items-start space-y-4 w-full md:w-1/2">
                 <!-- Title -->
                 <h2 class="text-lg font-semibold text-orange-500 mb-4">CONTACT US</h2>
                 
-            <!-- Address -->
-            <div class="flex items-start space-x-2">
-                <img src="assets/images/address-icon.jpg" alt="Address Icon" class="w-5 h-5 mt-1"> <!-- Align icon -->
-                <div class="text-white">
-                    <p class="ml-2">PAKAR Malaysia,</p>
-                    <p class="ml-2">Tingkat 4,</p>
-                    <p class="ml-2">Kompleks SPRM Kuala Lumpur,</p>
-                    <p class="ml-2">Jalan Cochrane,</p>
-                    <p class="ml-2">Wilayah Persekutuan,</p>
-                    <p class="ml-2">50988 Kuala Lumpur</p>
-                </div>
-            </div>
-            
+    <!-- Address -->
+<div class="flex items-center justify-center md:justify-start text-white">
+    <img src="assets/images/address-icon.jpg" alt="Address Icon" class="w-5 h-5 mr-2"> <!-- Adjusted gap -->
+    <p class="whitespace-nowrap">PAKAR Malaysia, Tingkat 4, Kompleks SPRM Kuala Lumpur, Jalan Cochrane, Wilayah Persekutuan, 50988 Kuala Lumpur</p>
+</div>
 
                 <!-- Phone Numbers -->
-                <div class="flex items-center">
+                <div class="flex items-center mt-2 justify-center md:justify-start">
                     <a href="https://wa.me/60108041080" target="_blank" class="flex items-center text-white">
                         <img src="assets/images/phone-icon.jpg" alt="Phone" class="w-5 h-5 mr-2">
                         <span>0108041080 (PAKAR OFFICIAL)</span>
                     </a>
                 </div>
-                <div class="flex items-center mt-2">
+                <div class="flex items-center mt-2 justify-center md:justify-start">
                     <a href="https://wa.me/60192815646" target="_blank" class="flex items-center text-white">
                         <img src="assets/images/phone-icon.jpg" alt="Phone" class="w-5 h-5 mr-2">
-                        <span>0192815646 (En. Samri, Secretary)</span>
+                        <span>0192815646 (Secretary General)</span> <!-- Changed to Secretary General -->
                     </a>
                 </div>
 
                 <!-- Email -->
-                <div class="flex items-center mt-2">
+                <div class="flex items-center mt-2 justify-center md:justify-start">
                     <a href="mailto:pakarsua@gmail.com" class="flex items-center text-white">
                         <img src="assets/images/email-icon.jpg" alt="Email" class="w-5 h-5 mr-2">
                         <span>pakarsua@gmail.com</span>
@@ -219,7 +208,7 @@
             </div>
 
             <!-- Number of Visitors Section -->
-            <div class="flex flex-col items-center space-y-2 mt-6 md:mt-0">
+            <div class="flex flex-col items-center space-y-2 mt-6 md:mt-0 w-full md:w-1/2">
                 <h4 class="font-semibold text-orange-500">NUMBER OF VISITORS</h4>
                 <ul class="text-white">
                     <li>Today: <span class="text-white">0</span></li>
@@ -268,59 +257,5 @@
     }
 </style>
 
-<!-- JavaScript for Language Switching -->
-<script>
-    const languageToggle = document.getElementById('language-toggle');
-    const translations = {
-        en: {
-            heroTitle: "Welcome to PAKAR Malaysia",
-            heroSubtitle: "Promoting Integrity, Trust, and Transparency",
-            heroBtn: "Explore Programs",
-            aboutTitle: "About Us",
-            aboutDesc1: "PAKAR Malaysia is a non-governmental organization committed to running programs on education and delivering information on anti-corruption, abuse of power, and good governance to every layer of society. This effort increases awareness and public confidence in Malaysia's anti-corruption initiatives.",
-            aboutDesc2: "PAKAR Malaysia also supports all efforts taken by the Malaysian Anti-Corruption Commission (SPRM) to create a society that rejects corruption and strives to make Malaysia a corruption-free country.",
-            historyTitle: "History",
-            historyDesc1: "PAKAR Malaysia was approved by the Registrar of Societies (ROS) on 14th December 2022 and was officially launched by YBhg. Tan Sri Azam Bin Baki, Chief Commissioner of SPRM, on 15th March 2023 at the SPRM headquarters, Putrajaya.",
-            historyDesc2: "PAKAR Malaysia operates from the SPRM Complex in Kuala Lumpur, Jalan Cochrane. It is led by former senior officers of the Malaysian Anti-Corruption Commission (SPRM) and is supported by experienced committee members from various fields.",
-            goalsTitle: "Objectives",
-            goalsDesc1: "The anti-corruption organization aims to create a society with integrity, where ethical values, honesty, and justice are emphasized and practiced across all societal levels.",
-            goalsDesc2: "We strive to build integrity and knowledge within organizations on how to prevent and identify signs of corruption. We also aim to establish networks with regional and international organizations sharing similar goals.",
-        },
-        bm: {
-            heroTitle: "Selamat Datang ke PAKAR Malaysia",
-            heroSubtitle: "Memupuk Integriti, Kepercayaan, dan Ketelusan",
-            heroBtn: "Terokai Program",
-            aboutTitle: "Pengenalan",
-            aboutDesc1: "Pertubuhan Anti Korupsi Malaysia atau singkatan nya PAKAR Malaysia, adalah satu pertubuhan yang bermatlamat dan memfokus untuk menjalankan program pendidikan dan penyampaian maklumat Antirasuah, Salahguna Kuasa dan Tatakelola Yang Baik secara berterusan kepada setiap lapisan masyarakat.",
-            aboutDesc2: "PAKAR Malaysia juga berperanan menyokong segala usaha yang diambil oleh Suruhanjaya Pencegahan Rasuah Malaysia (SPRM) dalam membentuk dan menjadikan masyarakat Malaysia yang benci Rasuah dan akhirnya membentuk Negara Malaysia yang bebas Rasuah.",
-            historyTitle: "Sejarah Penubuhan",
-            historyDesc1: "Pendaftaran PAKAR Malaysia telah diluluskan oleh Pendaftar Pertubuhan (ROS) pada 14hb Disember 2022 dan telah dilancarkan secara rasminya oleh YBhg. Tan Sri Azam Bin Baki, Ketua Pesuruhjaya SPRM, pada 15hb Mac 2023 di ibu Pejabat SPRM, Putrajaya.",
-            historyDesc2: "PAKAR Malaysia kini beroperasi dari Kompleks SPRM Kuala Lumpur, Jalan Cochrane. Ia diterajui oleh Mantan Pegawai Kanan Suruhanjaya Pencegahan Rasuah Malaysia (SPRM) dan disokong oleh Ahli Jawatankuasa yang berpengalaman.",
-            goalsTitle: "Matlamat Penubuhan",
-            goalsDesc1: "Pertubuhan anti rasuah bertujuan untuk mencipta masyarakat yang berintegriti, di mana nilai-nilai etika, kejujuran, dan keadilan ditekankan dan diamalkan oleh semua lapisan masyarakat.",
-            goalsDesc2: "Kami juga berusaha untuk membina rangkaian dengan organisasi dan pertubuhan serantau serta antarabangsa yang mempunyai matlamat serupa.",
-        },
-    };
-
-    let currentLanguage = "en";
-
-    languageToggle.addEventListener("click", () => {
-        currentLanguage = currentLanguage === "en" ? "bm" : "en";
-        languageToggle.textContent = currentLanguage === "en" ? "BM" : "EN";
-
-        document.getElementById("hero-title").textContent = translations[currentLanguage].heroTitle;
-        document.getElementById("hero-subtitle").textContent = translations[currentLanguage].heroSubtitle;
-        document.getElementById("hero-btn").textContent = translations[currentLanguage].heroBtn;
-        document.getElementById("about-title").textContent = translations[currentLanguage].aboutTitle;
-        document.getElementById("about-desc-1").textContent = translations[currentLanguage].aboutDesc1;
-        document.getElementById("about-desc-2").textContent = translations[currentLanguage].aboutDesc2;
-        document.getElementById("history-title").textContent = translations[currentLanguage].historyTitle;
-        document.getElementById("history-desc-1").textContent = translations[currentLanguage].historyDesc1;
-        document.getElementById("history-desc-2").textContent = translations[currentLanguage].historyDesc2;
-        document.getElementById("goals-title").textContent = translations[currentLanguage].goalsTitle;
-        document.getElementById("goals-desc-1").textContent = translations[currentLanguage].goalsDesc1;
-        document.getElementById("goals-desc-2").textContent = translations[currentLanguage].goalsDesc2;
-    });
-</script>
 </body>
 </html>
