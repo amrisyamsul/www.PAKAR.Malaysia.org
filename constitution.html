@@ -25,14 +25,14 @@
         </button>
 
         <!-- Navbar links for large screens -->
-        <ul class="flex space-x-8 items-center hidden lg:flex" id="navbar-links">
+        <ul class="flex space-x-8 items-center hidden lg:flex">
             <li><a href="index.html" class="text-white hover:text-orange-500 transition">Home</a></li>
             <li><a href="org_chart.html" class="text-white hover:text-orange-500 transition">Organization</a></li>
             <li><a href="programs.html" class="text-white hover:text-orange-500 transition">Programs</a></li>
             <li><a href="upcoming.programs.html" class="text-white hover:text-orange-500 transition">Upcoming Events</a></li>
             <li><a href="contact.html" class="text-white hover:text-orange-500 transition">Contact</a></li>
             <li><a href="collaboration.html" class="text-white hover:text-orange-500 transition">Collaborations Partner</a></li>
-            <li><a href="constitution.html" class="text-white hover:text-orange-500 transition">Constitution</a></li> <!-- Added Constitution -->
+            <li><a href="constitution.html" class="text-white hover:text-orange-500 transition">Constitution</a></li>
             <li><a href="news.html" class="text-white hover:text-orange-500 transition">News</a></li>
             <li>
                 <button id="language-toggle" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
@@ -49,7 +49,7 @@
             <li><a href="upcoming.programs.html" class="block text-white hover:text-orange-500 transition">Upcoming Events</a></li>
             <li><a href="contact.html" class="block text-white hover:text-orange-500 transition">Contact</a></li>
             <li><a href="collaboration.html" class="block text-white hover:text-orange-500 transition">Collaborations Partner</a></li>
-            <li><a href="constitution.html" class="block text-white hover:text-orange-500 transition">Constitution</a></li> <!-- Added Constitution -->
+            <li><a href="constitution.html" class="text-white hover:text-orange-500 transition">Constitution</a></li>
             <li><a href="news.html" class="block text-white hover:text-orange-500 transition">News</a></li>
             <li>
                 <button id="language-toggle-mobile" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
@@ -68,103 +68,6 @@
         navbarMenu.classList.toggle('hidden');
     });
 </script>
-
-</body>
-</html>
-
-
-
-
-<!-- Hero Section with Dynamic Background Image -->
-<section id="hero-section" class="relative text-white text-center py-16 flex items-center justify-center" style="background: url('assets/images/pakar-team.jpg') no-repeat center center; background-size: cover; height: 70vh; transition: background-image 1s ease-in-out;">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="relative container mx-auto text-center">
-        <h1 id="hero-title" class="text-5xl font-bold uppercase">Welcome to PAKAR Malaysia</h1>
-        <p id="hero-subtitle" class="mt-4 text-lg tracking-wide">Promoting Integrity, Trust, and Transparency</p>
-    </div>
-</section>
-
-<script>
-    const heroSection = document.getElementById('hero-section');
-    const images = [
-        'assets/images/pakar-5-team.jpg',
-        'assets/images/pakar-4-team.jpg',
-        'assets/images/pakar-6-team.jpg',
-        'assets/images/pakar-3-team.jpg',
-        'assets/images/pakar-team.jpg',
-        'assets/images/pakar-1-team.jpg'
-    ];
-
-    let currentImageIndex = 0;
-
-    const changeBackgroundImage = (index) => {
-        heroSection.style.backgroundImage = `url(${images[index]})`;
-    };
-
-    setInterval(() => {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        changeBackgroundImage(currentImageIndex);
-    }, 3000); // Change background every 3 seconds
-</script>
-
-
-<!-- President's Speech Section -->
-<section class="py-16 bg-white text-center">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-orange-500 mb-6">President's Speech</h2>
-        <div class="p-6 bg-gray-100 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <img src="assets/images/pakar-nasir.jpg" alt="Haji Mohd Nasir Bin Ab Hadi" class="w-48 h-auto mx-auto rounded-lg mb-4 shadow-md">
-            <p class="text-black mb-6">
-                "Welcome to PAKAR Malaysia, where we strive to uphold integrity, promote good governance, and combat corruption.
-                Our team is dedicated to making a positive impact in society through transparency, accountability, and ethical leadership.
-                Together, we can build a better future for Malaysia. Thank you for your support and commitment to our cause."
-            </p>
-            <h3 class="text-2xl font-bold text-black">Haji Mohd Nasir Bin Ab Hadi</h3>
-            <p class="text-orange-500 font-semibold">President, PAKAR Malaysia</p>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- About Section -->
-<section class="py-16 bg-gradient-to-r from-orange-100 to-gray-200">
-    <div class="container mx-auto text-center">
-        <h2 id="about-title" class="text-4xl font-bold mb-6 text-orange-500">About Us</h2>
-        <p id="about-desc-1" class="max-w-4xl mx-auto text-lg leading-7 text-black">
-            PAKAR Malaysia is a non-governmental organization committed to running programs on education and delivering information on anti-corruption, abuse of power, and good governance to every layer of society. This effort increases awareness and public confidence in Malaysia's anti-corruption initiatives.
-        </p>
-        <p id="about-desc-2" class="mt-6 max-w-4xl mx-auto text-lg leading-7 text-black">
-            PAKAR Malaysia also supports all efforts taken by the Malaysian Anti-Corruption Commission (SPRM) to create a society that rejects corruption and strives to make Malaysia a corruption-free country.
-        </p>
-    </div>
-</section>
-
-<!-- History Section -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-        <h2 id="history-title" class="text-4xl font-bold mb-6 text-orange-500">History</h2>
-        <p id="history-desc-1" class="max-w-4xl mx-auto text-lg leading-7 text-black">
-            PAKAR Malaysia was approved by the Registrar of Societies (ROS) on 14th December 2022 and was officially launched by YBhg. Tan Sri Azam Bin Baki, Chief Commissioner of SPRM, on 15th March 2023 at the SPRM headquarters, Putrajaya.
-        </p>
-        <p id="history-desc-2" class="mt-6 max-w-4xl mx-auto text-lg leading-7 text-black">
-            PAKAR Malaysia operates from the SPRM Complex in Kuala Lumpur, Jalan Cochrane. It is led by former senior officers of the Malaysian Anti-Corruption Commission (SPRM) and is supported by experienced committee members from various fields.
-        </p>
-    </div>
-</section>
-
-<!-- Goals Section -->
-<section class="py-16 bg-gradient-to-r from-gray-200 to-orange-100">
-    <div class="container mx-auto text-center">
-        <h2 id="goals-title" class="text-4xl font-bold mb-6 text-orange-500">Objectives</h2>
-        <p id="goals-desc-1" class="max-w-4xl mx-auto text-lg leading-7 text-black">
-            The anti-corruption organization aims to create a society with integrity, where ethical values, honesty, and justice are emphasized and practiced across all societal levels.
-        </p>
-        <p id="goals-desc-2" class="mt-6 max-w-4xl mx-auto text-lg leading-7 text-black">
-            We strive to build integrity and knowledge within organizations on how to prevent and identify signs of corruption. We also aim to establish networks with regional and international organizations sharing similar goals.
-        </p>
-    </div>
-</section>
 
 <!-- Footer -->
 <footer class="bg-black text-white py-6">

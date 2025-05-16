@@ -33,7 +33,6 @@
     <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold text-orange-500 mb-6" id="program-title"></h2>
         <div class="p-6 bg-gray-100 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <img src="assets/images/pakar-team.jpg" alt="Program Image" class="w-48 h-auto mx-auto rounded-lg mb-4 shadow-md" id="program-image">
             <p class="text-black mb-6" id="program-description"></p>
             <h3 class="text-2xl font-bold text-black" id="program-speaker">Speaker Name</h3>
             <p class="text-orange-500 font-semibold" id="program-date">Date of Event</p>
@@ -44,11 +43,12 @@
 <script>
     const params = new URLSearchParams(window.location.search);
     const program = params.get("program"); // Get the 'program' query parameter
+    console.log("Program query parameter:", program); // Debugging line
 
     const programDetails = {
         iso37001: {
-            title: "Workshop on Implementing ISO 37001:2016 (ABMS) in Organizations",
-            description: "This workshop focuses on the implementation of ISO 37001:2016 for Anti-Bribery Management Systems (ABMS). Learn about the steps, processes, and strategies to implement this globally recognized anti-corruption standard.",
+            title: "Workshop on How To be Competent Internal Auditor for ISO37001: ABMS 2016",
+            description: "Program Content: <br>• Introduction to the ISO37001: ABMS 2016 <br>• Internal Auditor Roles & Responsibilities <br>• Preparing Audit Planning <br>• Conducting Audit and Preparing Report <br>• Audit Follow up <br>• Case Study",
             speaker: "Dr. John Doe",
             date: "12th December 2024",
             image: "assets/images/iso37001.jpg"
@@ -65,12 +65,16 @@
 
     const currentProgram = programDetails[program];
 
-    // Set the content dynamically
-    document.getElementById("program-title").textContent = currentProgram.title;
-    document.getElementById("program-description").textContent = currentProgram.description;
-    document.getElementById("program-speaker").textContent = currentProgram.speaker;
-    document.getElementById("program-date").textContent = currentProgram.date;
-    document.getElementById("program-image").src = currentProgram.image;
+    if (currentProgram) {
+        // Set the content dynamically
+        document.getElementById("program-title").textContent = currentProgram.title;
+        document.getElementById("program-description").innerHTML = currentProgram.description;
+        document.getElementById("program-speaker").textContent = currentProgram.speaker;
+        document.getElementById("program-date").textContent = currentProgram.date;
+        document.getElementById("program-image").src = currentProgram.image;
+    } else {
+        console.log("No program found with the provided query parameter.");
+    }
 </script>
 
 </body>
