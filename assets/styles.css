@@ -1,0 +1,9 @@
+nav .container {
+    justify-content: center; /* Centers the logo and navigation items horizontally */
+}
+
+nav img {
+    height: 3rem; /* Adjust the size of the logo */
+    margin: 0 auto; /* Centers the logo within its container */
+    display: block;
+}
