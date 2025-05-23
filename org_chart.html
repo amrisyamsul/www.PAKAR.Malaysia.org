@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 <nav class="bg-black text-white py-4 shadow-lg">
     <div class="container mx-auto px-4 flex justify-between items-center">
         <a href="index.html" class="flex items-center space-x-2">
-            <img src="assets/images/pakar-logo.jpg" alt="PAKAR Logo" class="h-12">
+            <img src="assets/images/pakar-logo.jpg" alt="Logo PAKAR" class="h-12">
             <span class="text-xl font-bold text-orange-500">PAKAR Malaysia</span>
         </a>
         
@@ -25,14 +25,14 @@
         </button>
 
         <!-- Navbar links for large screens -->
-        <ul class="flex space-x-8 items-center hidden lg:flex">
-            <li><a href="index.html" class="text-white hover:text-orange-500 transition">Home</a></li>
-            <li><a href="org_chart.html" class="text-white hover:text-orange-500 transition">Organization</a></li>
-            <li><a href="programs.html" class="text-white hover:text-orange-500 transition">Programs</a></li>
-            <li><a href="upcoming.programs.html" class="text-white hover:text-orange-500 transition">Upcoming Events</a></li>
-            <li><a href="contact.html" class="text-white hover:text-orange-500 transition">Contact</a></li>
-            <li><a href="collaboration.html" class="text-white hover:text-orange-500 transition">Collaborations Partner</a></li>
-            <li><a href="news.html" class="text-white hover:text-orange-500 transition">News</a></li>
+        <ul class="flex space-x-8 items-center hidden lg:flex" id="navbar-links">
+            <li><a href="index.html" class="text-white hover:text-orange-500 transition">Utama</a></li>
+            <li><a href="org_chart.html" class="text-white hover:text-orange-500 transition">Organisasi</a></li>
+            <li><a href="programs.html" class="text-white hover:text-orange-500 transition">Program</a></li>
+            <li><a href="upcoming.programs.html" class="text-white hover:text-orange-500 transition">Acara Akan Datang</a></li>
+            <li><a href="contact.html" class="text-white hover:text-orange-500 transition">Hubungi Kami</a></li>
+            <li><a href="collaboration.html" class="text-white hover:text-orange-500 transition">Rakan Kerjasama</a></li>
+            <li><a href="news.html" class="text-white hover:text-orange-500 transition">Berita</a></li>
             <li>
                 <button id="language-toggle" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
                     BM
@@ -42,13 +42,13 @@
 
         <!-- Mobile Navbar links -->
         <ul class="lg:hidden absolute left-0 right-0 bg-black text-white px-4 py-6 space-y-6 hidden" id="navbar-menu">
-            <li><a href="index.html" class="block text-white hover:text-orange-500 transition">Home</a></li>
-            <li><a href="org_chart.html" class="block text-white hover:text-orange-500 transition">Organization</a></li>
-            <li><a href="programs.html" class="block text-white hover:text-orange-500 transition">Programs</a></li>
-            <li><a href="upcoming.programs.html" class="block text-white hover:text-orange-500 transition">Upcoming Events</a></li>
-            <li><a href="contact.html" class="block text-white hover:text-orange-500 transition">Contact</a></li>
-            <li><a href="collaboration.html" class="block text-white hover:text-orange-500 transition">Collaborations Partner</a></li>
-            <li><a href="news.html" class="block text-white hover:text-orange-500 transition">News</a></li>
+            <li><a href="index.html" class="block text-white hover:text-orange-500 transition">Utama</a></li>
+            <li><a href="org_chart.html" class="block text-white hover:text-orange-500 transition">Organisasi</a></li>
+            <li><a href="programs.html" class="block text-white hover:text-orange-500 transition">Program</a></li>
+            <li><a href="upcoming.programs.html" class="block text-white hover:text-orange-500 transition">Acara Akan Datang</a></li>
+            <li><a href="contact.html" class="block text-white hover:text-orange-500 transition">Hubungi Kami</a></li>
+            <li><a href="collaboration.html" class="block text-white hover:text-orange-500 transition">Rakan Kerjasama</a></li>
+            <li><a href="news.html" class="block text-white hover:text-orange-500 transition">Berita</a></li>
             <li>
                 <button id="language-toggle-mobile" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
                     BM
@@ -67,102 +67,95 @@
     });
 </script>
 
-</body>
-</html>
-
-
-<!-- Organization Chart Section -->
+<!-- Organisasi Section -->
 <section class="py-12 bg-gradient-to-r from-orange-100 to-gray-200">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-orange-500 mb-4">Exco Members</h2>
+        <h2 class="text-3xl font-bold text-orange-500 mb-4">Ahli Exco</h2>
         <p class="max-w-2xl mx-auto mb-6 text-black text-sm">
-            Meet the leaders and members of PAKAR Malaysia dedicated to promoting integrity, anti-corruption, and good governance.
+            Temui pemimpin dan ahli PAKAR Malaysia yang berdedikasi dalam mempromosikan integriti, anti-rasuah, dan tadbir urus yang baik.
         </p>
 
-        <!-- Hierarchical Organization Chart -->
+        <!-- Organisasi Chart -->
         <div class="flex flex-col items-center space-y-6">
-               
-               <!-- Advisor (Penasihat) -->
-               <div class="relative text-center">
-                    <img src="assets/images/pakar-shamshun.jpg" alt="Penasihat" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                    <h3 class="text-xl font-bold text-black mb-1">Dato' Sri Shamshun Baharin Bin Mohd Jamil</h3>
-                    <p class="text-orange-500 text-sm font-semibold">Advisor</p>
-                    <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
-                </div>
+            <!-- Penasihat -->
+            <div class="relative text-center">
+                <img src="assets/images/pakar-shamshun.jpg" alt="Penasihat" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                <h3 class="text-xl font-bold text-black mb-1">Dato' Sri Shamshun Baharin Bin Mohd Jamil</h3>
+                <p class="text-orange-500 text-sm font-semibold">Penasihat</p>
+                <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
+            </div>
 
-                <!-- President -->
-               <div class="relative text-center">
-                    <img src="assets/images/pakar-presiden.jpg" alt="Haji Mohd Nasir" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                    <h3 class="text-xl font-bold text-black mb-1">Haji Mohd Nasir Bin Ab Hadi</h3>
-                    <p class="text-orange-500 text-sm font-semibold">President</p>
-                    <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Longer Connecting Line -->
-                </div>
+            <!-- Presiden -->
+            <div class="relative text-center">
+                <img src="assets/images/pakar-presiden.jpg" alt="Haji Mohd Nasir" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                <h3 class="text-xl font-bold text-black mb-1">Haji Mohd Nasir Bin Ab Hadi</h3>
+                <p class="text-orange-500 text-sm font-semibold">Presiden</p>
+                <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Longer Connecting Line -->
+            </div>
 
-                <!-- Deputy President -->
-                <div class="relative text-center">
-                    <div class="w-1 h-6 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
-                    <img src="assets/images/pakar-razim1.jpg" alt="Datuk Razim Mohd Noor" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                    <h3 class="text-xl font-bold text-black mb-1">Datuk Razim Bin Mohd Noor</h3>
-                    <p class="text-orange-500 text-sm font-semibold">Deputy President</p>
-                    <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Longer Connecting Line -->
-                </div>
+            <!-- Timbalan Presiden -->
+            <div class="relative text-center">
+                <div class="w-1 h-6 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
+                <img src="assets/images/pakar-razim1.jpg" alt="Datuk Razim Mohd Noor" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                <h3 class="text-xl font-bold text-black mb-1">Datuk Razim Bin Mohd Noor</h3>
+                <p class="text-orange-500 text-sm font-semibold">Timbalan Presiden</p>
+                <div class="w-1 h-16 bg-orange-500 mx-auto"></div> <!-- Longer Connecting Line -->
+            </div>
 
-                <!-- Vice Presidents Level with centered alignment -->
-                <div class="relative flex justify-center mt-6">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-10 bg-orange-500"></div> <!-- Longer Connecting Line -->
-                </div>
+            <!-- Naib Presiden Level -->
+            <div class="relative flex justify-center mt-6">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-10 bg-orange-500"></div> <!-- Longer Connecting Line -->
+            </div>
 
-                <!-- Center the Vice Presidents -->
-                <div class="flex justify-center items-center space-x-10 w-full">
-                    <div class="relative text-center w-1/3">
-                        <img src="assets/images/pakar-rabiah.jpg" alt="Datin Rabiah Mokhtar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                        <h3 class="text-xl font-bold text-black mb-1">Datin Rabiah Binti Mokhtar</h3>
-                        <p class="text-orange-500 text-sm font-semibold">Vice President 1</p>
-                    </div>
-                    <div class="relative text-center w-1/3">
-                        <img src="assets/images/pakar-ishak.jpg" alt="Haji Ishak Abu Bakar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                        <h3 class="text-xl font-bold text-black mb-1">Haji Ishak Bin Abu Bakar</h3>
-                        <p class="text-orange-500 text-sm font-semibold">Vice President 2</p>
-                        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-6 bg-orange-500"></div> <!-- Connecting Line Below VP2 -->
-                    </div>
-                    <div class="relative text-center w-1/3">
-                        <img src="assets/images/-team.jpg" alt="Vice President 3" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                        <h3 class="text-xl font-bold text-black mb-1">Vice President 3</h3>
-                        <p class="text-orange-500 text-sm font-semibold">Vice President 3</p>
-                    </div>
+            <!-- Center the Naib Presiden -->
+            <div class="flex justify-center items-center space-x-10 w-full">
+                <div class="relative text-center w-1/3">
+                    <img src="assets/images/pakar-rabiah.jpg" alt="Datin Rabiah Mokhtar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                    <h3 class="text-xl font-bold text-black mb-1">Datin Rabiah Binti Mokhtar</h3>
+                    <p class="text-orange-500 text-sm font-semibold">Naib Presiden 1</p>
                 </div>
-
-                <!-- Secretary General and Treasurer Level -->
-                <div class="relative flex justify-center mt-6">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-orange-500"></div> <!-- Connecting line from Secretary General -->
+                <div class="relative text-center w-1/3">
+                    <img src="assets/images/pakar-ishak.jpg" alt="Haji Ishak Abu Bakar" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                    <h3 class="text-xl font-bold text-black mb-1">Haji Ishak Bin Abu Bakar</h3>
+                    <p class="text-orange-500 text-sm font-semibold">Naib Presiden 2</p>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-6 bg-orange-500"></div> <!-- Connecting Line Below VP2 -->
                 </div>
-                <div class="flex justify-center space-x-10">
-                    <!-- Secretary General -->
-                    <div class="relative text-center">
-                        <img src="assets/images/pakar-samri.jpeg" alt="Samri Dollah" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                        <h3 class="text-xl font-bold text-black mb-1">Samri Bin Dollah</h3>
-                        <p class="text-orange-500 text-sm font-semibold">Secretary General</p>
-                    </div>
-
-                    <!-- Treasurer -->
-                    <div class="relative text-center">
-                        <img src="assets/images/pakar-izham.jpg" alt="Mohd Izham Ahmad" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                        <h3 class="text-xl font-bold text-black mb-1">Encik Izham Bin Ahmad</h3>
-                        <p class="text-orange-500 text-sm font-semibold">Treasurer</p>
-                    </div>
-                </div>
-
-                <!-- Assistant Secretary 2 Level (at the bottom) -->
-                <div class="relative text-center mt-6">
-                    <div class="w-1 h-6 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
-                    <img src="assets/images/pakar-dzul.jpg" alt="Dzulkarnaen Haseri" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
-                    <h3 class="text-xl font-bold text-black mb-1">Dzulkarnaen Bin Haseri</h3>
-                    <p class="text-orange-500 text-sm font-semibold">Assistant Secretary 2</p>
-                    <div class="w-1 h-8 bg-orange-500 mx-auto"></div> <!-- Arrow Differentiation -->
+                <div class="relative text-center w-1/3">
+                    <img src="assets/images/-team.jpg" alt="Naib Presiden 3" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                    <h3 class="text-xl font-bold text-black mb-1">Naib Presiden 3</h3>
+                    <p class="text-orange-500 text-sm font-semibold">Naib Presiden 3</p>
                 </div>
             </div>
-        </section>
 
+            <!-- Setiausaha Agung dan Bendahari Level -->
+            <div class="relative flex justify-center mt-6">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-orange-500"></div> <!-- Connecting line from Setiausaha Agung -->
+            </div>
+            <div class="flex justify-center space-x-10">
+                <!-- Setiausaha Agung -->
+                <div class="relative text-center">
+                    <img src="assets/images/pakar-samri.jpeg" alt="Samri Dollah" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                    <h3 class="text-xl font-bold text-black mb-1">Samri Bin Dollah</h3>
+                    <p class="text-orange-500 text-sm font-semibold">Setiausaha Agung</p>
+                </div>
+
+                <!-- Bendahari -->
+                <div class="relative text-center">
+                    <img src="assets/images/pakar-izham.jpg" alt="Mohd Izham Ahmad" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                    <h3 class="text-xl font-bold text-black mb-1">Encik Izham Bin Ahmad</h3>
+                    <p class="text-orange-500 text-sm font-semibold">Bendahari</p>
+                </div>
+            </div>
+
+            <!-- Pembantu Setiausaha 2 Level (di bawah) -->
+            <div class="relative text-center mt-6">
+                <div class="w-1 h-6 bg-orange-500 mx-auto"></div> <!-- Connecting Line -->
+                <img src="assets/images/pakar-dzul.jpg" alt="Dzulkarnaen Haseri" class="w-32 h-40 mx-auto mb-2 object-cover border-2 border-orange-500 rounded-full">
+                <h3 class="text-xl font-bold text-black mb-1">Dzulkarnaen Bin Haseri</h3>
+                <p class="text-orange-500 text-sm font-semibold">Pembantu Setiausaha 2</p>
+                <div class="w-1 h-8 bg-orange-500 mx-auto"></div> <!-- Arrow Differentiation -->
+            </div>
+        </section>
 
 <!-- Footer -->
 <footer class="bg-black text-white py-6">
@@ -172,13 +165,13 @@
             <!-- Contact Us Left Column -->
             <div class="flex flex-col items-center md:items-start space-y-4 w-full md:w-1/2">
                 <!-- Title -->
-                <h2 class="text-lg font-semibold text-orange-500 mb-4">CONTACT US</h2>
+                <h2 class="text-lg font-semibold text-orange-500 mb-4">HUBUNGI KAMI</h2>
                 
-    <!-- Address -->
-<div class="flex items-center justify-center md:justify-start text-white">
-    <img src="assets/images/address-icon.jpg" alt="Address Icon" class="w-5 h-5 mr-2"> <!-- Adjusted gap -->
-    <p class="whitespace-nowrap">PAKAR Malaysia, Tingkat 4, Kompleks SPRM Kuala Lumpur, Jalan Cochrane, Wilayah Persekutuan, 50988 Kuala Lumpur</p>
-</div>
+                <!-- Address -->
+                <div class="flex items-center justify-center md:justify-start text-white">
+                    <img src="assets/images/address-icon.jpg" alt="Address Icon" class="w-5 h-5 mr-2"> <!-- Adjusted gap -->
+                    <p class="whitespace-nowrap">PAKAR Malaysia, Tingkat 4, Kompleks SPRM Kuala Lumpur, Jalan Cochrane, Wilayah Persekutuan, 50988 Kuala Lumpur</p>
+                </div>
 
                 <!-- Phone Numbers -->
                 <div class="flex items-center mt-2 justify-center md:justify-start">
@@ -190,7 +183,7 @@
                 <div class="flex items-center mt-2 justify-center md:justify-start">
                     <a href="https://wa.me/60192815646" target="_blank" class="flex items-center text-white">
                         <img src="assets/images/phone-icon.jpg" alt="Phone" class="w-5 h-5 mr-2">
-                        <span>0192815646 (Secretary General)</span> <!-- Changed to Secretary General -->
+                        <span>0192815646 (Setiausaha Agung)</span>
                     </a>
                 </div>
 
@@ -205,11 +198,11 @@
 
             <!-- Number of Visitors Section -->
             <div class="flex flex-col items-center space-y-2 mt-6 md:mt-0 w-full md:w-1/2">
-                <h4 class="font-semibold text-orange-500">NUMBER OF VISITORS</h4>
+                <h4 class="font-semibold text-orange-500">BILANGAN PELAWAT</h4>
                 <ul class="text-white">
-                    <li>Today: <span class="text-white">0</span></li>
-                    <li>This Month: <span class="text-white">0</span></li>
-                    <li>Total Visitors: <span class="text-white">0</span></li>
+                    <li>Hari Ini: <span class="text-white">0</span></li>
+                    <li>Bulan Ini: <span class="text-white">0</span></li>
+                    <li>Jumlah Pelawat: <span class="text-white">0</span></li>
                 </ul>
             </div>
         </div>
@@ -229,7 +222,7 @@
 
         <!-- All Rights Reserved Section -->
         <div class="text-center mt-6 text-orange-500 text-sm">
-            <p>&copy; 2024 PAKAR Malaysia. All Rights Reserved.</p>
+            <p>&copy; 2024 PAKAR Malaysia. Semua Hak Cipta Terpelihara.</p>
         </div>
     </div>
 </footer>

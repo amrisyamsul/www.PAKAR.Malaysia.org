@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 <nav class="bg-black text-white py-4 shadow-lg">
     <div class="container mx-auto px-4 flex justify-between items-center">
         <a href="index.html" class="flex items-center space-x-2">
-            <img src="assets/images/pakar-logo.jpg" alt="PAKAR Logo" class="h-12">
+            <img src="assets/images/pakar-logo.jpg" alt="Logo PAKAR" class="h-12">
             <span class="text-xl font-bold text-orange-500">PAKAR Malaysia</span>
         </a>
         
@@ -25,14 +25,14 @@
         </button>
 
         <!-- Navbar links for large screens -->
-        <ul class="flex space-x-8 items-center hidden lg:flex">
-            <li><a href="index.html" class="text-white hover:text-orange-500 transition">Home</a></li>
-            <li><a href="org_chart.html" class="text-white hover:text-orange-500 transition">Organization</a></li>
-            <li><a href="programs.html" class="text-white hover:text-orange-500 transition">Programs</a></li>
-            <li><a href="upcoming.programs.html" class="text-white hover:text-orange-500 transition">Upcoming Events</a></li>
-            <li><a href="contact.html" class="text-white hover:text-orange-500 transition">Contact</a></li>
-            <li><a href="collaboration.html" class="text-white hover:text-orange-500 transition">Collaborations Partner</a></li>
-            <li><a href="news.html" class="text-white hover:text-orange-500 transition">News</a></li>
+        <ul class="flex space-x-8 items-center hidden lg:flex" id="navbar-links">
+            <li><a href="index.html" class="text-white hover:text-orange-500 transition">Utama</a></li>
+            <li><a href="org_chart.html" class="text-white hover:text-orange-500 transition">Organisasi</a></li>
+            <li><a href="programs.html" class="text-white hover:text-orange-500 transition">Program</a></li>
+            <li><a href="upcoming.programs.html" class="text-white hover:text-orange-500 transition">Acara Akan Datang</a></li>
+            <li><a href="contact.html" class="text-white hover:text-orange-500 transition">Hubungi Kami</a></li>
+            <li><a href="collaboration.html" class="text-white hover:text-orange-500 transition">Rakan Kerjasama</a></li>
+            <li><a href="news.html" class="text-white hover:text-orange-500 transition">Berita</a></li>
             <li>
                 <button id="language-toggle" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
                     BM
@@ -42,13 +42,13 @@
 
         <!-- Mobile Navbar links -->
         <ul class="lg:hidden absolute left-0 right-0 bg-black text-white px-4 py-6 space-y-6 hidden" id="navbar-menu">
-            <li><a href="index.html" class="block text-white hover:text-orange-500 transition">Home</a></li>
-            <li><a href="org_chart.html" class="block text-white hover:text-orange-500 transition">Organization</a></li>
-            <li><a href="programs.html" class="block text-white hover:text-orange-500 transition">Programs</a></li>
-            <li><a href="upcoming.programs.html" class="block text-white hover:text-orange-500 transition">Upcoming Events</a></li>
-            <li><a href="contact.html" class="block text-white hover:text-orange-500 transition">Contact</a></li>
-            <li><a href="collaboration.html" class="block text-white hover:text-orange-500 transition">Collaborations Partner</a></li>
-            <li><a href="news.html" class="block text-white hover:text-orange-500 transition">News</a></li>
+            <li><a href="index.html" class="block text-white hover:text-orange-500 transition">Utama</a></li>
+            <li><a href="org_chart.html" class="block text-white hover:text-orange-500 transition">Organisasi</a></li>
+            <li><a href="programs.html" class="block text-white hover:text-orange-500 transition">Program</a></li>
+            <li><a href="upcoming.programs.html" class="block text-white hover:text-orange-500 transition">Acara Akan Datang</a></li>
+            <li><a href="contact.html" class="block text-white hover:text-orange-500 transition">Hubungi Kami</a></li>
+            <li><a href="collaboration.html" class="block text-white hover:text-orange-500 transition">Rakan Kerjasama</a></li>
+            <li><a href="news.html" class="block text-white hover:text-orange-500 transition">Berita</a></li>
             <li>
                 <button id="language-toggle-mobile" class="bg-orange-500 text-black font-bold px-4 py-2 rounded hover:bg-orange-400 transition">
                     BM
@@ -84,10 +84,10 @@
 <!-- Contact Section -->
 <section class="py-16 bg-gradient-to-r from-orange-100 to-gray-200">
     <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-center text-orange-500 mb-6">Contact Us</h2>
+        <h2 class="text-4xl font-bold text-center text-orange-500 mb-6">Hubungi Kami</h2>
         <form action="#" method="POST" class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8">
             <div class="mb-4">
-                <label for="name" class="block text-lg font-medium text-gray-700">Name</label>
+                <label for="name" class="block text-lg font-medium text-gray-700">Nama</label>
                 <input type="text" id="name" name="name" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
             </div>
             <div class="mb-4">
@@ -95,15 +95,15 @@
                 <input type="email" id="email" name="email" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
             </div>
             <div class="mb-4">
-                <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                <label for="message" class="block text-lg font-medium text-gray-700">Mesej</label>
                 <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required></textarea>
             </div>
             <button type="submit" class="w-full bg-orange-500 text-white font-bold py-3 rounded-lg hover:bg-orange-400 transition">
-                Send Message
+                Hantar Mesej
             </button>
         </form>
         <p class="text-center mt-8 text-gray-800">
-            Or contact us directly at: 
+            Atau hubungi kami secara langsung di: 
             <a href="mailto:pakarsua@gmail.com" class="text-orange-500 hover:underline">pakarsua@gmail.com</a>
         </p>
     </div>
@@ -112,20 +112,20 @@
 <!-- High Committee Contact Section -->
 <section class="py-12 bg-white">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-orange-500 mb-4">Central Committee Contact Information</h2>
+        <h2 class="text-3xl font-bold text-orange-500 mb-4">Maklumat Hubungi Jawatankuasa Pusat</h2>
         <div class="flex justify-center space-x-8">
             <!-- Contact details for high committee -->
             <div>
-                <h3 class="text-xl font-semibold text-black">Haji Mohd Nasir Bin Ab Hadi (President)</h3>
-                <a href="https://wa.me/60193835688" class="text-orange-500">Contact via WhatsApp</a>
+                <h3 class="text-xl font-semibold text-black">Haji Mohd Nasir Bin Ab Hadi (Presiden)</h3>
+                <a href="https://wa.me/60193835688" class="text-orange-500">Hubungi via WhatsApp</a>
             </div>
             <div>
-                <h3 class="text-xl font-semibold text-black">Datuk Razim Bin Mohd Noor (Deputy President)</h3>
-                <a href="https://wa.me/60196001220" class="text-orange-500">Contact via WhatsApp</a>
+                <h3 class="text-xl font-semibold text-black">Datuk Razim Bin Mohd Noor (Timbalan Presiden)</h3>
+                <a href="https://wa.me/60196001220" class="text-orange-500">Hubungi via WhatsApp</a>
             </div>
             <div>
-                <h3 class="text-xl font-semibold text-black">Samri Bin Dollah (Secretary General)</h3>
-                <a href="https://wa.me/60192815646" class="text-orange-500">Contact via WhatsApp</a>
+                <h3 class="text-xl font-semibold text-black">Samri Bin Dollah (Setiausaha Agung)</h3>
+                <a href="https://wa.me/60192815646" class="text-orange-500">Hubungi via WhatsApp</a>
             </div>
         </div>
     </div>
@@ -139,7 +139,7 @@
             <!-- Contact Us Left Column -->
             <div class="flex flex-col items-center md:items-start space-y-4 w-full md:w-1/2">
                 <!-- Title -->
-                <h2 class="text-lg font-semibold text-orange-500 mb-4">CONTACT US</h2>
+                <h2 class="text-lg font-semibold text-orange-500 mb-4">HUBUNGI KAMI</h2>
                 
                 <!-- Address -->
                 <div class="flex items-center justify-center md:justify-start text-white">
@@ -157,7 +157,7 @@
                 <div class="flex items-center mt-2 justify-center md:justify-start">
                     <a href="https://wa.me/60192815646" target="_blank" class="flex items-center text-white">
                         <img src="assets/images/phone-icon.jpg" alt="Phone" class="w-5 h-5 mr-2">
-                        <span>0192815646 (Secretary General)</span>
+                        <span>0192815646 (Setiausaha Agung)</span>
                     </a>
                 </div>
 
@@ -172,11 +172,11 @@
 
             <!-- Number of Visitors Section -->
             <div class="flex flex-col items-center space-y-2 mt-6 md:mt-0 w-full md:w-1/2">
-                <h4 class="font-semibold text-orange-500">NUMBER OF VISITORS</h4>
+                <h4 class="font-semibold text-orange-500">BILANGAN PELAWAT</h4>
                 <ul class="text-white">
-                    <li>Today: <span class="text-white">0</span></li>
-                    <li>This Month: <span class="text-white">0</span></li>
-                    <li>Total Visitors: <span class="text-white">0</span></li>
+                    <li>Hari Ini: <span class="text-white">0</span></li>
+                    <li>Bulan Ini: <span class="text-white">0</span></li>
+                    <li>Jumlah Pelawat: <span class="text-white">0</span></li>
                 </ul>
             </div>
         </div>
@@ -197,7 +197,7 @@
 
         <!-- All Rights Reserved Section -->
         <div class="text-center mt-6 text-orange-500 text-sm">
-            <p>&copy; 2024 PAKAR Malaysia. All Rights Reserved.</p>
+            <p>&copy; 2024 PAKAR Malaysia. Semua Hak Cipta Terpelihara.</p>
         </div>
     </div>
 </footer>
